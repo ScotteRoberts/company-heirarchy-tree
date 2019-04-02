@@ -4,6 +4,12 @@ export default class CompanyHeirarchy extends Component {
   render() {
     const { company } = this.props;
     console.log(company);
-    return <h2>{company.root.name}</h2>;
+    return (
+      <ul>
+        {company.root.employees.map((employee, i) => (
+          <li key={i}>{employee.name}</li>
+        ))}
+      </ul>
+    );
   }
 }
