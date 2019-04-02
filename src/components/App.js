@@ -18,10 +18,13 @@ class App extends Component {
     };
   }
 
+  addToCompany = () => {};
+
   render() {
     return (
       <div className="App">
         <h1>Company Heirarchy Tree</h1>
+
         <CompanyHeirarchy company={this.state.company} />
       </div>
     );

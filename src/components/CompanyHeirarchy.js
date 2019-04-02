@@ -7,7 +7,9 @@ export default class CompanyHeirarchy extends Component {
     return (
       <ul>
         {company.root.employees.map((employee, i) => (
-          <li key={i}>{employee.name}</li>
+          <li key={i}>
+            <button>{employee.name}</button>
+          </li>
         ))}
       </ul>
     );
